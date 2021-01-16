@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion Integer.parseInt(GLOBAL_COMPILE)
+
+    defaultConfig {
+        minSdkVersion Integer.parseInt(GLOBAL_MIN_SDK)
+        targetSdkVersion Integer.parseInt(GLOBAL_TARGET_SDK)
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            res.srcDirs = ['res']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    implementation(rootProject.ext.dependencies["appcompat"]) {
+//        transitive = false
+    }
+    implementation 'com.google.code.gson:gson:2.8.6'
+}
+
+repositories {
+    maven {
+        url 'https://maven.google.com/'
+        name 'Google'
+    }
+}

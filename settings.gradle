@@ -1,0 +1,7 @@
+include ':share'
+include ':location'
+include ':app'
+include ':ext'
+include ':wheelview'
+//include ':IMLib'
+rootProject.name = "xiuxiu_confinement_nurse"

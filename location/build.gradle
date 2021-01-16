@@ -1,0 +1,32 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion Integer.parseInt(GLOBAL_COMPILE)
+    buildToolsVersion GLOBAL_BUILD_TOOL
+    defaultConfig {
+        minSdkVersion GLOBAL_MIN_SDK
+        targetSdkVersion GLOBAL_TARGET_SDK
+    }
+
+    buildTypes {
+        release {
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation rootProject.ext.dependencies["appcompat"]
+    implementation rootProject.ext.dependencies["recyclerview"]
+}
+
+
+
+
+

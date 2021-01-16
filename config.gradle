@@ -1,0 +1,88 @@
+ext {
+    IS_DEBUG = true
+    android = [compileSdkVersion: 29,
+               buildToolsVersion: "29.0.3",
+               minSdkVersion    : 16,
+               targetSdkVersion : 29,
+               versionCode      : 55,
+               versionName      : "2.1.2",
+               channel          : "default",
+
+    ]
+    dependencies = [
+//          Z  A
+             "appcompat"           : "androidx.appcompat:appcompat:1.1.0",
+             "annotaion"           : "androidx.annotation:annotation:1.1.0",
+             "activityback—androidx"        : "com.monster:activityback:2.0.0",
+
+//            C
+             "constraintlayout"    : "androidx.constraintlayout:constraintlayout:1.1.3",
+             "coordinatorlayout"   : "androidx.coordinatorlayout:coordinatorlayout:1.0.0",
+
+             "core-runtime"        : "androidx.arch.core:core-runtime:2.0.1",
+             "core-common"         : "androidx.arch.co-re:core-runtime:2.0.1",
+
+//            D
+
+
+
+
+
+
+//            F
+
+             "fresco"              : "com.facebook.fresco:fresco:1.13.0",
+             "fresco-gif"          : "com.facebook.fresco:animated-gif:1.12.1",
+             "fresco-webp"         : "com.facebook.fresco:animated-webp:1.12.1",
+             "fresco-webpsupport"  : "com.facebook.fresco:webpsupport:1.12.1",
+             "fragment"            : "androidx.fragment:fragment:1.1.0",
+//            G
+             "gson"                : "com.google.code.gson:gson:2.8.6",
+//            L
+             "leanback"            : "androidx.leanback:leanback:1.0.0",
+             "layoutPage"          : "com.monster:layoutPage:2.0.0",
+             "lottie"              : "com.airbnb.android:lottie:3.0.0",
+             "lifecycle-common"    : "androidx.lifecycle:lifecycle-common:2.1.0",
+             "libphonenumber"      : "io.michaelrocks:libphonenumber-android:8.12.6",
+
+//            M
+             "multidex"            : "com.android.support:multidex:1.0.3",
+             "mmkv"                : "com.tencent:mmkv-static:1.0.24",
+             "media"               : "androidx.media:media:1.0.1",
+
+//        O
+             "okhttp3"              : "com.squareup.okhttp3:okhttp:3.4.1",
+//            P
+             "paging"              : "androidx.paging:paging-runtime:2.1.1",
+             "palette"             : "androidx.palette:palette:1.0.0",
+
+
+//            R
+             "rxbus"               : "com.monster:rxbus:1.0.1",
+             "recyclerview"        : "androidx.recyclerview:recyclerview:1.1.0",
+             "room"                : "androidx.room:room-runtime:2.2.4",
+             "room-compiler"       : "androidx.room:room-compiler:2.2.4",
+             "rxjava2"             : "io.reactivex.rxjava2:rxjava:2.2.8",
+             "rxandroid2"           : "io.reactivex.rxjava2:rxandroid:2.1.0",
+
+
+
+//            S
+             "sparta-library-res"  : "com.monster:sparta-library-res:1.0.2",
+             "lifecycle-extensions": "androidx.lifecycle:lifecycle-extensions:2.0.0",
+//V
+            "viewpager"          : "androidx.viewpager:viewpager:1.0.0",
+             "viewpager2"          : "androidx.viewpager2:viewpager2:1.0.0",
+             "vectorDrawable"      : "androidx.vectorrawable:1.1.0",
+//update
+
+            //t
+//            X
+             "zxing"               : "com.google.zxing:core:3.3.0",
+//            V
+            //U
+            "update-androidx"             : "com.monster:update-androidx:1.0.0.5",
+            "update-androidx-no-op"        : "com.monster:update-androidx-no-op:1.0.0.2",
+
+    ]
+}
