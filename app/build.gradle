@@ -1,0 +1,183 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion Integer.parseInt(GLOBAL_COMPILE)
+    buildToolsVersion GLOBAL_BUILD_TOOL
+
+    defaultConfig {
+        applicationId "com.xiuxiu.confinement_nurse"
+        minSdkVersion Integer.parseInt(GLOBAL_MIN_SDK)
+        targetSdkVersion Integer.parseInt(GLOBAL_TARGET_SDK)
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [
+                        AROUTER_MODULE_NAME: project.getName(),
+                        //必须，告知RxHttp你依赖的okhttp版本，目前已适配 v3.12.0 - v4.7.2版本
+                        rxhttp_okhttp: '4.7.2',
+                        //使用asXxx方法时必须，告知RxHttp你依赖的rxjava版本，可传入rxjava2、rxjava3
+                        rxhttp_rxjava: 'rxjava2'
+//                rxhttp_package: 'rxhttp'   //非必须，指定RxHttp相关类的生成路径，即包名
+                ]
+
+            }
+        }
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a"
+        }
+    }
+    signingConfigs {
+        debug {
+            storeFile file(sign_storeFile_debug)
+            storePassword sign_storePassword_debug
+            keyAlias sign_keyAlias_debug
+            keyPassword sign_keyPassword_debug
+            v1SigningEnabled true
+            v2SigningEnabled false
+        }
+        release {
+            storeFile file(sign_storeFile_release)
+            storePassword sign_storePassword_release
+            keyAlias sign_keyAlias_release
+            keyPassword sign_keyPassword_release
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+    buildTypes {
+        debug{
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+        }
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation(rootProject.ext.dependencies["appcompat"]) {
+//        transitive = false
+    }
+    implementation(project(path: ':location')) {
+    }
+
+    implementation(project(path: ':share')) {
+    }
+
+
+    implementation  rootProject.ext.dependencies["room"]
+    annotationProcessor rootProject.ext.dependencies["room-compiler"]
+
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation(rootProject.ext.dependencies["coordinatorlayout"])
+    implementation(rootProject.ext.dependencies["viewpager"])
+    implementation(rootProject.ext.dependencies["constraintlayout"])
+    implementation rootProject.ext.dependencies["rxjava2"]
+    implementation rootProject.ext.dependencies["rxandroid2"]
+    implementation rootProject.ext.dependencies["lifecycle-extensions"]
+    implementation rootProject.ext.dependencies["recyclerview"]
+    implementation rootProject.ext.dependencies["libphonenumber"]
+
+    implementation 'com.github.hackware1993:MagicIndicator:1.5.0'
+    implementation  rootProject.ext.dependencies["mmkv"]
+    implementation 'com.noober.background:core:1.6.3'
+//    https://github.com/CymChad/BaseRecyclerViewAdapterHelper/blob/master/readme/0-BaseRecyclerViewAdapterHelper.md
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
+    implementation "com.android.support:support-annotations:28.0.0"
+    annotationProcessor "com.android.support:support-annotations:28.0.0"
+    implementation 'com.google.android:flexbox:2.0.1'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation project(':ext')
+    implementation rootProject.ext.dependencies["multidex"]
+
+//    https://github.com/li-xiaojun/XPopup
+    implementation 'com.lxj:xpopup:2.0.2'
+//    implementation 'com.lxj:xpopup-ext:0.0.3'
+//    implementation 'com.lxj:xpopup-ext:0.0.4'
+//    https://github.com/gyf-dev/ImmersionBar
+    // 基础依赖包，必须要依赖
+    implementation 'com.gyf.immersionbar:immersionbar:3.0.0'
+// fragment快速实现（可选）
+    implementation 'com.gyf.immersionbar:immersionbar-components:3.0.0'
+// kotlin扩展（可选）
+//    implementation 'com.gyf.immersionbar:immersionbar-ktx:3.0.0'
+//    https://github.com/alibaba/ARouter/blob/master/README_CN.md
+    implementation 'com.alibaba:arouter-api:1.5.0'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
+
+
+
+    //必须3个为必须
+    implementation 'com.ljx.rxhttp:rxhttp:2.2.7'
+    //rxhttp v2.2.2版本起，需要手动依赖okhttp
+    implementation 'com.squareup.okhttp3:okhttp:4.7.2'
+    annotationProcessor 'com.ljx.rxhttp:rxhttp-compiler:2.2.7' //生成RxHttp类
+
+    implementation 'com.ljx.rxlife2:rxlife-rxjava:2.0.0'
+//    implementation 'com.ljx.rxlife2:rxlife-rxjava:2.0.0' //管理RxJava2生命周期，页面销毁，关闭请求
+    //以下均为非必须
+    //管理协程生命周期，页面销毁，关闭请求
+    implementation 'com.ljx.rxlife:rxlife-coroutine:2.0.0'
+
+    //Converter 根据自己需求选择 RxHttp默认内置了GsonConverter
+//    implementation 'com.ljx.rxhttp:converter-jackson:2.2.7'
+//    implementation 'com.ljx.rxhttp:converter-fastjson:2.2.7'
+//    implementation 'com.ljx.rxhttp:converter-protobuf:2.2.7'
+//    implementation 'com.ljx.rxhttp:converter-simplexml:2.2.7'
+
+    implementation 'com.github.MZCretin:FanPermission:1.0.0'
+
+//    implementation 'com.google.dagger:hilt-android:2.28-alpha'
+//    kapt  'com.google.dagger:hilt-android-compiler:2.28-alpha'
+//    https://github.com/JeremyLiao/SmartEventBus
+    implementation 'com.jeremyliao:live-event-bus-x:1.7.2'
+    implementation 'com.jeremyliao:smart-event-bus-base:0.0.1'
+    annotationProcessor 'com.jeremyliao:smart-event-bus-compiler:0.0.2'
+
+    //稳定版是 0.4.3
+    implementation 'com.zhihu.android:matisse:0.5.3-beta3'
+    implementation 'com.github.dongjunkun:CuteIndicator:1.0.1'
+
+//    https://github.com/huanghaibin-dev/CalendarView
+    implementation 'com.haibin:calendarview:3.6.9'
+
+    implementation 'com.haibin:calendarview:3.6.9'
+    implementation files('libs/BaiduLBS_Android.jar')
+
+
+    //融云  在应用目录的 build.gradle 引入融云依赖
+    api 'cn.rongcloud.sdk:im_lib:4.0.2' // 即时通讯基础能力库
+    api 'cn.rongcloud.sdk:im_kit:4.0.2' // 即时通讯 UI 基础组件
+    api 'cn.rongcloud.sdk:call_kit:4.0.2' // 音视频通话能力 UI 组件
+    api 'cn.rongcloud.sdk:call_lib:4.0.2' // 音视频呼叫信令
+
+//    implementation (name:'rpsdk-4.2.0', ext:'aar')
+//    implementation (name:'oss-android-sdk-2.9.2', ext:'aar')
+//    implementation (name:'SecurityGuardSDK-external-release-5.4.193-preInstall', ext:'aar')
+//    implementation (name:'SecurityBodySDK-external-release-5.4.112-preInstall', ext:'aar')
+    implementation 'top.zibin:Luban:1.1.8'
+    implementation(name: 'silicompressor', ext: 'aar')
+//    implementation 'com.iceteck.silicompressorr:silicompressor:2.2.3'
+}

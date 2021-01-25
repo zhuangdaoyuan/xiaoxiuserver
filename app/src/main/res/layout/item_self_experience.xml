@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:paddingLeft="46pt"
+    android:paddingRight="46pt"
+    tools:viewBindingIgnore="false">
+
+    <com.xiuxiu.confinement_nurse.ui.base.view.XView
+        android:layout_width="14pt"
+        android:layout_height="14pt"
+        android:layout_gravity="center"
+        app:bl_solid_color="#000000"
+        app:bl_shape="oval"></com.xiuxiu.confinement_nurse.ui.base.view.XView>
+
+    <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20pt"
+        android:text="评价"
+        android:textColor="#333333"
+        android:textSize="40pt"></com.xiuxiu.confinement_nurse.ui.base.view.XTextView>
+
+</LinearLayout>

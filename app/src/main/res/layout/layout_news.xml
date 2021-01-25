@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="259pt"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/iv_layout_news_headPortrait"
+        android:layout_width="129pt"
+        android:layout_height="129pt"
+        android:layout_marginLeft="46pt"
+        android:layout_marginTop="66pt" />
+
+    <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+        android:id="@+id/iv_layout_news_num"
+        android:layout_width="wrap_content"
+        android:layout_height="44pt"
+        android:layout_marginLeft="167pt"
+        android:layout_marginTop="66pt"
+        android:minWidth="44pt"
+        android:paddingLeft="10pt"
+        android:paddingRight="10pt"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        android:textSize="29pt"
+        android:background="#000000"
+        tools:visibility="visible"
+        tools:text="1"
+        app:bl_shape="oval"
+        app:bl_solid_color="#FF1717"
+        >
+
+    </com.xiuxiu.confinement_nurse.ui.base.view.XTextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230pt"
+        android:layout_marginTop="64pt"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="46pt">
+
+        <TextView
+            android:id="@+id/iv_layout_news_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:maxWidth="300pt"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="52pt"
+            tools:text="用户名" />
+
+
+        <TextView
+            android:id="@+id/iv_layout_news_user_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="46pt"
+            android:ellipsize="end"
+            android:textColor="#444444"
+            android:textSize="40pt"
+            tools:text="类型" />
+
+
+        <View
+            android:id="@+id/iv_layout_news_user_type_line"
+            android:layout_width="1pt"
+            android:layout_height="40pt"
+            android:background="#444444"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20pt" />
+
+        <TextView
+            android:id="@+id/iv_layout_news_user_type_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20pt"
+            android:ellipsize="end"
+            android:maxWidth="300pt"
+            android:textColor="#444444"
+            android:textSize="40pt"
+            tools:text="地址" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1pt"
+            android:layout_weight="1">
+
+        </View>
+
+        <TextView
+            android:id="@+id/iv_layout_news_user_type_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20pt"
+            android:ellipsize="end"
+            android:maxWidth="300pt"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="40pt"
+
+            tools:text="时间" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/iv_layout_news_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="230pt"
+        android:layout_marginBottom="66pt"
+        android:ellipsize="end"
+        android:maxWidth="680pt"
+        android:textColor="#666666"
+        android:textSize="43pt"
+        tools:text="消息主体" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2pt"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="230pt"
+        android:background="#EEEEEE">
+
+    </View>
+</merge>

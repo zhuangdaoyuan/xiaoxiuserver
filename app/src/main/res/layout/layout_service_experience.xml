@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46pt"
+        android:paddingBottom="20pt"
+
+        android:layout_marginTop="58pt"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+                android:layout_width="200pt"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:textColor="#888888"
+                android:textSize="35pt"
+                android:id="@+id/tv_layout_service_experience_service"
+                tools:text="月嫂服务:"/>
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="200pt"
+                android:lines="1"
+                android:textColor="#666666"
+                android:id="@+id/tv_layout_service_experience_time"
+                android:textSize="35pt"
+                tools:text="XXXXXXXX"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20pt"
+            android:layout_marginLeft="200pt"
+            android:text="广东"
+            android:textColor="#19CDEE"
+            android:id="@+id/tv_layout_service_experience_area"
+            android:textSize="35pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20pt"
+            android:paddingRight="20pt"
+            android:layout_height="wrap_content">
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+                android:layout_width="200pt"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="服务评价:"
+                android:textColor="#1A1A1A"
+                android:textSize="35pt"/>
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_layout_service_experience_evaluate"
+                android:layout_weight="1"
+                android:text="xxxxxxxxxx"
+                android:textColor="#1A1A1A"
+                android:textSize="35pt"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="58pt"
+        android:layout_marginRight="46pt"
+        android:paddingRight="20pt"
+        android:paddingBottom="20pt"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广东"
+            android:id="@+id/tv_layout_service_experience_type"
+            android:textColor="#19CDEE"
+            android:textSize="35pt"/>
+
+        <ImageView
+            android:layout_width="112pt"
+            android:layout_height="75pt"
+            android:visibility="gone"
+            android:id="@+id/iv_layout_service_experience"
+            android:layout_marginTop="23pt"/>
+    </LinearLayout>
+
+
+</FrameLayout>

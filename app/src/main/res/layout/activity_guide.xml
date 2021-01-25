@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.xiuxiu.confinement_nurse.ui.base.view.XButton
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="56pt"
+        android:background="@null"
+        android:onClick="onMain"
+        android:paddingLeft="63pt"
+        android:paddingTop="20pt"
+        android:paddingRight="63pt"
+        android:paddingBottom="20pt"
+        android:text="立即开启"
+        android:textColor="#333333"
+        android:textSize="40pt"
+        android:visibility="gone"
+        app:bl_corners_radius="16pt"
+        app:bl_stroke_color="#333333"
+        app:bl_stroke_width="1pt"
+        tools:visibility="visible">
+
+    </com.xiuxiu.confinement_nurse.ui.base.view.XButton>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="115pt"
+        android:gravity="center">
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XImageView
+            android:layout_width="20pt"
+            android:layout_height="20pt"
+            android:layout_marginRight="29pt"
+            app:bl_selected_solid_color="#FFFFFF"
+            app:bl_shape="oval"
+            app:bl_unSelected_solid_color="@color/color_FFFFFF_a20"  />
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XImageView
+            android:layout_width="20pt"
+            android:layout_height="20pt"
+            app:bl_selected_solid_color="#FFFFFF"
+            app:bl_shape="oval"
+            app:bl_unSelected_solid_color="@color/color_FFFFFF_a20" />
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XImageView
+            android:layout_width="20pt"
+            android:layout_height="20pt"
+            android:layout_marginLeft="29pt"
+            app:bl_selected_solid_color="#FFFFFF"
+            app:bl_shape="oval"
+            app:bl_unSelected_solid_color="@color/color_FFFFFF_a20" />
+    </LinearLayout>
+</FrameLayout>

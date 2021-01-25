@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xiuxiu.confinement_nurse.ui.base.view.XFrameLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="139pt"
+        android:translationZ="7pt"
+
+        android:background="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/fl_activity_order_details_back"
+            android:layout_width="60pt"
+            android:layout_height="60pt"
+            android:layout_marginLeft="46pt"
+            android:onClick="onBack"
+            android:layout_marginTop="53pt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XImageView
+                android:layout_width="27pt"
+                android:onClick="onBack"
+                android:layout_height="46pt"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/icon_left"
+                app:layout_constraintLeft_toLeftOf="parent" />
+        </FrameLayout>
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:id="@+id/tv_activity_details_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="筛选"
+            android:textColor="#000000"
+            android:textSize="58pt" />
+
+    </com.xiuxiu.confinement_nurse.ui.base.view.XFrameLayout>
+
+    <com.xiuxiu.confinement_nurse.ui.base.view.consecutivescroller.ConsecutiveScrollerLayout
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="100pt"/>
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="92pt"
+            android:layout_marginTop="100pt"
+            android:text="投递简历"
+            android:textColor="#000000" android:textStyle="bold"
+            android:textSize="58pt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </com.xiuxiu.confinement_nurse.ui.base.view.XTextView>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="13pt"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_marginLeft="30pt"
+            android:layout_marginRight="30pt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="100pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="92pt"
+                android:textStyle="bold"
+                android:text="价格区间"
+                android:textColor="#000000"
+                android:textSize="58pt"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </com.xiuxiu.confinement_nurse.ui.base.view.XTextView>
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20pt"
+                android:text="（按月计算）"
+                android:textColor="#666666"
+                android:textSize="40pt"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </com.xiuxiu.confinement_nurse.ui.base.view.XTextView>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="50pt"></Space>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30pt"
+            android:layout_marginRight="30pt"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="100pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="92pt"
+                android:text="时间选择"
+                android:textColor="#000000" android:textStyle="bold"
+                android:textSize="58pt"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </com.xiuxiu.confinement_nurse.ui.base.view.XTextView>
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20pt"
+                android:text=""
+                android:textColor="#666666"
+                android:textSize="40pt"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </com.xiuxiu.confinement_nurse.ui.base.view.XTextView>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="50pt"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView2"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30pt"
+            android:layout_marginRight="30pt"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </com.xiuxiu.confinement_nurse.ui.base.view.consecutivescroller.ConsecutiveScrollerLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:translationZ="7pt"
+        android:gravity="center_vertical">
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XButton
+            android:id="@+id/bt_activity_filter_clear"
+            android:layout_width="247pt"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46pt"
+            android:layout_marginTop="33pt"
+            android:layout_marginBottom="33pt"
+            android:gravity="center"
+            android:text="清除"
+            android:textColor="#EC706D"
+            android:textSize="52pt"
+            app:bl_corners_radius="9pt"
+            app:bl_solid_color="#F6F6F6" />
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XButton
+            android:id="@+id/bt_activity_filter_define"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34pt"
+            android:layout_marginTop="33pt"
+            android:layout_marginRight="46pt"
+            android:layout_marginBottom="33pt"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="#FFFFFF"
+            android:textSize="52pt"
+            app:bl_corners_radius="9pt"
+            app:bl_enabled_solid_color="@color/color_backdrop_primary"
+            app:bl_unEnabled_solid_color="@color/color_backdrop_un_primary" />
+    </LinearLayout>
+</LinearLayout>

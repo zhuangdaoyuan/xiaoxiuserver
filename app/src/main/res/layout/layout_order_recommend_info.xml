@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="452pt"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    app:bl_corners_radius="43pt"
+    app:bl_solid_color="@color/color_backdrop_white"
+    tools:viewBindingIgnore="false">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="58pt">
+
+        <TextView
+            android:id="@+id/tv_item_order_recommend_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46pt"
+            android:textColor="@color/color_text_color_primary"
+            android:textSize="46pt"
+            tools:text="月嫂" />
+
+        <TextView
+            android:id="@+id/tv_item_order_recommend_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="46pt"
+            android:textColor="#FE2323"
+            android:textSize="40pt"
+            tools:text="月嫂" />
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/tv_item_order_recommend_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46pt"
+        android:layout_marginTop="45pt"
+        android:textColor="#999999"
+        android:textSize="35pt"
+        tools:text="月嫂" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27pt"
+        app:alignContent="stretch"
+        android:layout_marginLeft="46pt"
+        app:alignItems="stretch"
+        app:flexWrap="wrap">
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:layout_width="141pt"
+            android:layout_height="58pt"
+            android:gravity="center"
+            android:text="单胎"
+            android:textColor="#666666"
+            android:textSize="35pt"
+            android:singleLine="true"
+            app:bl_corners_radius="9pt"
+            app:bl_solid_color="#F6F6F6" />
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:layout_width="141pt"
+            android:layout_height="58pt"
+            android:gravity="center"
+            android:layout_marginLeft="29pt"
+            android:singleLine="true"
+            android:text="单胎"
+            android:textColor="#666666"
+            android:textSize="35pt"
+            app:bl_corners_radius="9pt"
+            app:bl_solid_color="#F6F6F6" />
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:layout_width="141pt"
+            android:layout_height="58pt"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="单胎"
+            android:textColor="#666666"
+            android:textSize="35pt"
+            android:layout_marginLeft="29pt"
+            app:bl_corners_radius="9pt"
+            app:bl_solid_color="#F6F6F6" />
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:layout_width="141pt"
+            android:layout_height="58pt"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="单胎"
+            android:textColor="#666666"
+            android:textSize="35pt"
+            android:layout_marginLeft="29pt"
+            app:bl_corners_radius="9pt"
+            app:bl_solid_color="#F6F6F6" />
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="35pt"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_item_order_recommend_user_img"
+            android:layout_width="74pt"
+            android:layout_height="74pt"
+            android:layout_marginLeft="46pt" />
+
+        <TextView
+            android:id="@+id/tv_item_order_recommend_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="13pt"
+            android:ellipsize="end"
+            android:maxWidth="200pt"
+            android:textColor="@color/color_text_color_primaryvariant"
+            android:textSize="32pt" />
+
+        <TextView
+            android:id="@+id/tv_item_order_recommend_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="76pt"
+            android:layout_weight="1"
+            android:textColor="@color/color_text_color_primaryvariant"
+            android:textSize="32pt" />
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:id="@+id/tv_item_order_recommend_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="46pt"
+            android:paddingLeft="27pt"
+            android:paddingTop="17pt"
+            android:paddingRight="27pt"
+            android:paddingBottom="17pt"
+            android:text="投简历"
+            android:textColor="@color/color_text_color_white"
+            android:textSize="34pt"
+            app:bl_corners_radius="33pt"
+            app:bl_enabled_solid_color="@color/color_backdrop_primary"
+            app:bl_unEnabled_solid_color="@color/color_backdrop_un_primary" />
+    </LinearLayout>
+</LinearLayout>

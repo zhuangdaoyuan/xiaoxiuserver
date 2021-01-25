@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="139pt"
+        android:background="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/activity_agency_register_back"
+            android:layout_width="60pt"
+            android:layout_height="60pt"
+            android:layout_marginLeft="46pt"
+            android:layout_marginTop="53pt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XImageView
+                android:layout_width="27pt"
+                android:layout_height="46pt"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/icon_left"
+                android:onClick="onBack"
+                app:layout_constraintLeft_toLeftOf="parent" />
+        </FrameLayout>
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="58pt" />
+    </FrameLayout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title1111111"
+                android:layout_gravity="center"
+                android:layout_marginLeft="89pt"
+                android:layout_marginTop="59pt"
+                android:text="机构重新提交信息"
+                android:textColor="#333333"
+                android:textSize="69pt"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <com.xiuxiu.confinement_nurse.ui.login.view.XEditView
+                android:id="@+id/activity_agency_register_phone"
+                android:layout_width="match_parent"
+                android:layout_height="127pt"
+                android:layout_marginLeft="89pt"
+                android:layout_marginTop="120pt"
+                android:layout_marginRight="89pt"
+                app:layout_constraintTop_toBottomOf="@id/title1111111"
+                app:icon_left="@drawable/icon_phone"
+                app:icon_right="@drawable/icon_error"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:text_hint="请输入手机号码" />
+
+
+            <com.xiuxiu.confinement_nurse.ui.login.view.XEditView
+                android:id="@+id/activity_agency_register_name"
+                android:layout_width="match_parent"
+                android:layout_height="127pt"
+                android:layout_marginLeft="89pt"
+                android:layout_marginTop="43pt"
+                android:layout_marginRight="89pt"
+                app:icon_right="@drawable/icon_error"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/activity_agency_register_phone"
+                app:text_hint="请输入机构名称" />
+
+
+            <com.xiuxiu.confinement_nurse.ui.login.view.XEditView
+                android:id="@+id/activity_agency_register_contact_person"
+                android:layout_width="match_parent"
+                android:layout_height="127pt"
+                android:layout_marginLeft="89pt"
+                android:layout_marginTop="43pt"
+                android:layout_marginRight="89pt"
+                app:icon_right="@drawable/icon_error"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/activity_agency_register_name"
+                app:text_hint="请输入机构联系人" />
+
+            <com.xiuxiu.confinement_nurse.ui.login.view.XEditView
+                android:id="@+id/activity_agency_register_telephone"
+                android:layout_width="match_parent"
+                android:layout_height="127pt"
+                android:layout_marginLeft="89pt"
+                android:layout_marginTop="43pt"
+                android:layout_marginRight="89pt"
+                app:icon_right="@drawable/icon_error"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/activity_agency_register_contact_person"
+                app:text_hint="请输入机构联系电话" />
+
+            <LinearLayout
+                android:id="@+id/activity_agency_register_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="89pt"
+                android:layout_marginTop="43pt"
+                android:layout_marginRight="89pt"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/activity_agency_register_telephone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20pt"
+                    android:text="机构证件" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20pt"
+                    android:layout_marginTop="20pt"
+                    android:orientation="horizontal">
+
+                    <com.xiuxiu.confinement_nurse.ui.base.view.XImageView
+                        android:layout_width="300pt"
+                        app:bl_solid_color="#E6E6E6"
+                        app:bl_corners_radius="20pt"
+                        android:id="@+id/activity_agency_register_image1"
+                        android:layout_height="300pt">
+                    </com.xiuxiu.confinement_nurse.ui.base.view.XImageView>
+                    <com.xiuxiu.confinement_nurse.ui.base.view.XImageView
+                        android:layout_width="300pt"
+                        app:bl_solid_color="#E6E6E6"
+                        app:bl_corners_radius="20pt"
+                        android:layout_marginLeft="20pt"
+                        android:id="@+id/activity_agency_register_image2"
+                        android:layout_height="300pt">
+                    </com.xiuxiu.confinement_nurse.ui.base.view.XImageView>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/activity_agency_register_protocol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110pt"
+                android:layout_marginTop="42pt"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/activity_agency_register_image">
+
+                <com.xiuxiu.confinement_nurse.ui.base.view.XImageView
+                    android:id="@+id/iv_protocol"
+                    android:layout_width="37pt"
+                    android:layout_height="37pt"
+                    app:bl_selected_solid_color="#EC706D"
+                    app:bl_shape="oval"
+                    app:bl_stroke_color="#666666"
+                    app:bl_stroke_width="1pt"
+                    app:bl_unSelected_solid_color="#EFEFEF">
+
+                </com.xiuxiu.confinement_nurse.ui.base.view.XImageView>
+
+                <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+                    android:id="@+id/tv_protocol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14pt"
+                    android:padding="0pt"
+                    android:text="点击下一步即为同意"
+                    android:textColor="#666666"
+                    android:textSize="37pt" />
+
+                <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+                    android:id="@+id/user_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14pt"
+                    android:onClick="onClickUserAgreement"
+                    android:padding="0pt"
+                    android:text="《用户注册协议》"
+                    android:textColor="#55B9F3"
+                    android:textSize="35pt" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.xiuxiu.confinement_nurse.ui.base.view.XButton
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="89pt"
+        android:layout_marginTop="88pt"
+        android:layout_marginRight="89pt"
+        android:onClick="onNext"
+        android:padding="0pt"
+        android:layout_marginBottom="100pt"
+        android:text="提交"
+        android:textColor="#FFFFFF"
+        android:textSize="40pt"
+        app:bl_corners_radius="63pt"
+        app:bl_enabled_solid_color="#EC706D"
+        app:bl_unEnabled_solid_color="#99EC706D"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_agency_register_protocol" />
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="139pt"
+        android:background="@color/color_FFFFFF_a100"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/fl_activity_my_back"
+            android:layout_width="60pt"
+            android:layout_height="60pt"
+            android:layout_marginLeft="46pt"
+            android:layout_marginTop="53pt"
+            android:onClick="onBack"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XImageView
+                android:layout_width="27pt"
+                android:layout_height="46pt"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/icon_left"
+                android:onClick="onBack"
+                app:layout_constraintLeft_toLeftOf="parent" />
+        </FrameLayout>
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="学习经历"
+            android:textColor="#000000"
+            android:textSize="58pt" />
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="80pt"
+            android:text="增加"
+            android:onClick="onClickAdd"
+            android:textColor="#000000"
+            android:textSize="40pt" />
+    </FrameLayout>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/srl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_activity_learning_experience_list"
+            android:layout_width="match_parent"
+            app:bl_solid_color="#FFFFFF"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

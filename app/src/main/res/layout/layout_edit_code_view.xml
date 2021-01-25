@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:bl_corners_radius="63pt"
+    app:bl_solid_color="#E6E6E6">
+
+    <FrameLayout
+        android:layout_width="50pt"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="46pt">
+
+        <ImageView
+            android:id="@+id/iv_layout_edit_left_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:background="#000000"
+            tools:src="@drawable/icon_phone" />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/tv_layout_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="30pt"
+        android:layout_weight="1"
+        android:background="@null"
+        android:cursorVisible="false"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:paddingLeft="30pt"
+        android:textColor="#000000"
+        android:textColorHint="#B3B3B3"
+        android:textSize="40pt" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:minWidth="200pt"
+        android:layout_height="match_parent"
+        android:layout_marginRight="49pt">
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XView
+            android:layout_width="3pt"
+            android:layout_height="40pt"
+            android:layout_gravity="center_vertical"
+            android:background="#CCCCCC">
+
+        </com.xiuxiu.confinement_nurse.ui.base.view.XView>
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:id="@+id/tv_layout_edit_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="45pt"
+            android:scaleType="center"
+            android:textColor="#EC706D"
+            android:textSize="32pt"
+            tools:text="获取验证码" />
+    </FrameLayout>
+</merge>

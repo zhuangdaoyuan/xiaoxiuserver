@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xiuxiu.confinement_nurse.ui.base.view.XFrameLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="139pt"
+        android:background="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/fl_activity_order_details_back"
+            android:layout_width="60pt"
+            android:layout_height="60pt"
+            android:layout_marginLeft="46pt"
+            android:layout_marginTop="53pt"
+            android:onClick="onBack"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XImageView
+                android:layout_width="27pt"
+                android:layout_height="46pt"
+                android:layout_gravity="center_vertical"
+                android:onClick="onBack"
+                android:background="@drawable/icon_left"
+                app:layout_constraintLeft_toLeftOf="parent" />
+        </FrameLayout>
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:id="@+id/tv_activity_details_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="合同"
+            android:textColor="#000000"
+            android:textSize="58pt" />
+
+    </com.xiuxiu.confinement_nurse.ui.base.view.XFrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="46pt"
+            android:paddingRight="46pt"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="58pt"
+                android:gravity="center"
+                android:text="合约合同"
+                android:textColor="#000000"
+                android:textSize="58pt" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="甲方:"
+                    android:textColor="#000000"
+                    android:textSize="36pt" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:id="@+id/text1"
+                    android:textColor="#000000"
+                    android:textSize="36pt" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="身份证号码:"
+                    android:textColor="#000000"
+                    android:textSize="36pt" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:id="@+id/text2"
+                    android:textSize="36pt" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="乙方:"
+
+                    android:textColor="#000000"
+                    android:textSize="36pt" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:id="@+id/text3"
+                    android:textSize="36pt" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="身份证号码:"
+                    android:textColor="#000000"
+                    android:textSize="36pt" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:id="@+id/text4"
+                    android:textSize="36pt" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:text="@string/contract"
+                android:id="@+id/text5"
+                android:textSize="36pt" />
+            <CheckBox
+                style="@style/Text.subtitle"
+                android:layout_marginLeft="-20pt"
+                android:id="@+id/agree"
+                android:drawablePadding="23pt"
+                android:text="同意"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.xiuxiu.confinement_nurse.ui.base.view.XButton
+        android:id="@+id/bt_activity_filter_define"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="确认提交"
+        android:textColor="#FFFFFF"
+        android:textSize="52pt"
+        app:bl_corners_radius="9pt"
+        app:bl_enabled_solid_color="@color/color_backdrop_primary"
+        app:bl_unEnabled_solid_color="@color/color_backdrop_un_primary" />
+
+
+</LinearLayout>

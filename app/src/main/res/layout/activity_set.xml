@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="139pt"
+        android:background="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/fl_activity_my_back"
+            android:layout_width="60pt"
+            android:layout_height="60pt"
+            android:layout_marginLeft="46pt"
+            android:layout_marginTop="53pt"
+            android:onClick="onBack"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XImageView
+                android:layout_width="27pt"
+                android:layout_height="46pt"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/icon_left"
+                android:onClick="onBack"
+                app:layout_constraintLeft_toLeftOf="parent" />
+        </FrameLayout>
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="系统设置"
+            android:textColor="#000000"
+            android:textSize="58pt" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="46pt"
+
+        android:id="@+id/view4"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="100pt">
+            <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="关于我们"
+                android:textColor="#000000"
+                android:textSize="58pt" />
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XImageView
+                android:layout_width="19pt"
+                android:layout_height="36pt"
+                android:layout_marginRight="46pt"
+                android:background="@drawable/icon_right"
+                app:layout_constraintBottom_toBottomOf="@id/v_fragment_center_bg"
+                app:layout_constraintRight_toRightOf="@id/v_fragment_center_bg"
+                app:layout_constraintTop_toTopOf="@id/v_fragment_center_bg">
+
+            </com.xiuxiu.confinement_nurse.ui.base.view.XImageView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="20pt"
+            android:background="#EFEFEF"
+            android:layout_height="1pt">
+        </View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="46pt"
+
+        android:id="@+id/view1"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="100pt">
+            <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="修改登录密码"
+                android:textColor="#000000"
+                android:textSize="58pt" />
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XImageView
+                android:layout_width="19pt"
+                android:layout_height="36pt"
+                android:layout_marginRight="46pt"
+                android:background="@drawable/icon_right"
+                app:layout_constraintBottom_toBottomOf="@id/v_fragment_center_bg"
+                app:layout_constraintRight_toRightOf="@id/v_fragment_center_bg"
+                app:layout_constraintTop_toTopOf="@id/v_fragment_center_bg">
+
+            </com.xiuxiu.confinement_nurse.ui.base.view.XImageView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="20pt"
+            android:background="#EFEFEF"
+            android:layout_height="1pt">
+        </View>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="46pt"
+        android:id="@+id/view2"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="100pt">
+            <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="更换手机号码"
+                android:textColor="#000000"
+                android:textSize="58pt" />
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XImageView
+                android:layout_width="19pt"
+                android:layout_height="36pt"
+                android:layout_marginRight="46pt"
+                android:background="@drawable/icon_right"
+                app:layout_constraintBottom_toBottomOf="@id/v_fragment_center_bg"
+                app:layout_constraintRight_toRightOf="@id/v_fragment_center_bg"
+                app:layout_constraintTop_toTopOf="@id/v_fragment_center_bg">
+
+            </com.xiuxiu.confinement_nurse.ui.base.view.XImageView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="20pt"
+            android:background="#EFEFEF"
+            android:layout_height="1pt">
+        </View>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="46pt"
+        android:id="@+id/view3"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="100pt">
+            <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="注销账户"
+                android:textColor="#000000"
+                android:textSize="58pt" />
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XImageView
+                android:layout_width="19pt"
+                android:layout_height="36pt"
+                android:layout_marginRight="46pt"
+                android:background="@drawable/icon_right"
+                app:layout_constraintBottom_toBottomOf="@id/v_fragment_center_bg"
+                app:layout_constraintRight_toRightOf="@id/v_fragment_center_bg"
+                app:layout_constraintTop_toTopOf="@id/v_fragment_center_bg">
+
+            </com.xiuxiu.confinement_nurse.ui.base.view.XImageView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="20pt"
+            android:background="#EFEFEF"
+            android:layout_height="1pt">
+        </View>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiuxiu.confinement_nurse.ui.base.view.XFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:bl_corners_bottomLeftRadius="20pt"
+    app:bl_solid_color="#1CCCFF"
+    app:bl_corners_bottomRightRadius="20pt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="36pt"
+        android:layout_marginBottom="36pt"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="46pt"
+            android:text="更多"
+            android:layout_height="wrap_content">
+        </TextView>
+        <ImageView
+            android:layout_width="43pt"
+            android:layout_marginLeft="12pt"
+            android:background="@drawable/icon_more"
+            android:layout_height="43pt">
+        </ImageView>
+    </LinearLayout>
+</com.xiuxiu.confinement_nurse.ui.base.view.XFrameLayout>

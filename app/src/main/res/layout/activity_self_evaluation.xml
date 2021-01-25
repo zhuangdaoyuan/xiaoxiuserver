@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="139pt"
+        android:background="#FFFFFF"
+        android:translationZ="8pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/fl_activity_my_back"
+            android:layout_width="60pt"
+            android:layout_height="60pt"
+            android:layout_marginLeft="46pt"
+            android:layout_marginTop="53pt"
+            android:onClick="onBack"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XImageView
+                android:layout_width="27pt"
+                android:layout_height="46pt"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/icon_left"
+                android:onClick="onBack"
+                app:layout_constraintLeft_toLeftOf="parent" />
+        </FrameLayout>
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="自我展示"
+            android:textColor="#000000"
+            android:textSize="58pt" />
+    </FrameLayout>
+
+    <Space
+        android:layout_width="0pt"
+        android:layout_height="46pt" />
+
+    <com.xiuxiu.confinement_nurse.ui.base.view.consecutivescroller.ConsecutiveScrollerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="314pt"
+            android:layout_marginLeft="46pt"
+            android:id="@+id/fl_activity_self_evaluation_prompt"
+            android:layout_marginRight="46pt"
+            android:background="@drawable/icon_self_1">
+
+            <ImageView
+                android:layout_width="242pt"
+                android:layout_height="242pt"
+                android:layout_marginLeft="53pt"
+                android:layout_marginTop="23pt"
+                android:background="@drawable/icon_self_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="105pt"
+                android:text="让更多人了解你"
+                android:textColor="#FEFEFE"
+                android:textSize="52pt" />
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginRight="56pt"
+                android:layout_marginBottom="78pt"
+                android:gravity="center"
+                android:onClick="onClickAddVideo"
+                android:paddingLeft="36pt"
+                android:paddingTop="23pt"
+                android:paddingRight="36pt"
+                android:paddingBottom="23pt"
+                android:text="去添加"
+                android:textColor="#00A2DE"
+                android:textSize="40pt"
+                app:bl_corners_radius="43pt"
+                app:bl_solid_color="#FFFFFF" />
+        </FrameLayout>
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="576pt"
+            android:layout_marginLeft="46pt"
+            android:layout_marginRight="46pt"
+            android:id="@+id/fl_activity_self_evaluation_video"
+            app:bl_corners_radius="12pt"
+            app:bl_solid_color="@color/color_backdrop_white">
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/iv_activity_self_evaluation_video"
+                android:layout_height="match_parent"
+             >
+            </ImageView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:onClick="onClickPlay"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="135pt"
+                    android:layout_height="135pt"
+                    android:background="@drawable/icon_video">
+
+                </ImageView>
+
+                <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="39pt"
+                    android:gravity="center"
+                    android:textColor="#FFFEFE"
+                    android:textSize="52pt"
+                    tools:text="sssss">
+
+                </com.xiuxiu.confinement_nurse.ui.base.view.XTextView>
+            </LinearLayout>
+        </com.xiuxiu.confinement_nurse.ui.base.view.XFrameLayout>
+
+        <Space
+            android:layout_width="0pt"
+            android:layout_height="86pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46pt"
+            android:drawableLeft="@drawable/icon_line_1"
+            android:drawablePadding="31pt"
+            android:text="自我评价："
+            android:textColor="#1A1A1A"
+            android:textSize="46pt" />
+
+        <Space
+            android:layout_width="0pt"
+            android:layout_height="46pt" />
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46pt"
+            android:layout_marginRight="46pt"
+            app:bl_corners_radius="20pt"
+            app:bl_solid_color="#FFFFFF">
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XEditTextView
+                android:layout_width="match_parent"
+                android:layout_height="706pt"
+                android:background="@null"
+                android:maxLength="100"
+                android:cursorVisible="false"
+                android:textSize="40pt"
+                android:gravity="left"
+                android:hint="可输入100多个字（例：自己的一些优点和技能方
+面的能力、经验补充等。）"
+                android:id="@+id/ed_activity_self_evaluation"
+                android:padding="45pt"
+                android:textColorHint="#999999"
+                app:bl_corners_radius="20pt"
+                app:bl_solid_color="#FFFFFF"/>
+        </com.xiuxiu.confinement_nurse.ui.base.view.XFrameLayout>
+
+        <Space
+            android:layout_width="0pt"
+            android:layout_height="75pt" />
+    </com.xiuxiu.confinement_nurse.ui.base.view.consecutivescroller.ConsecutiveScrollerLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="158pt"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XButton
+            android:layout_width="248pt"
+            android:layout_height="115pt"
+            android:layout_marginLeft="46pt"
+            android:text="删除"
+            android:textColor="#EC706D"
+            android:onClick="onClickDelete"
+            android:id="@+id/bt_activity_self_evaluation_delete"
+            app:bl_corners_radius="9pt"
+            app:bl_solid_color="#F6F6F6"/>
+
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XButton
+            android:layout_width="match_parent"
+            android:layout_height="115pt"
+            android:layout_marginLeft="36pt"
+            android:layout_marginRight="46pt"
+            android:text="确定"
+            android:textColor="#FFFFFF"
+            android:onClick="onClickSubmit"
+            app:bl_corners_radius="9pt"
+            app:bl_enabled_solid_color="@color/color_7858EE_a100"
+            app:bl_unEnabled_solid_color="@color/color_backdrop_un_primary"/>
+    </LinearLayout>
+</LinearLayout>

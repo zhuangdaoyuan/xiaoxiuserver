@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="139pt"
+        android:background="#FFFFFF">
+
+        <FrameLayout
+            android:id="@+id/fl_activity_my_back"
+            android:layout_width="60pt"
+            android:layout_height="60pt"
+            android:layout_marginLeft="46pt"
+            android:layout_marginTop="53pt"
+            android:onClick="onBack"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XImageView
+                android:layout_width="27pt"
+                android:layout_height="46pt"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/icon_left"
+                android:onClick="onBack"
+                app:layout_constraintLeft_toLeftOf="parent" />
+        </FrameLayout>
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="58pt"
+            tools:text="sssss" />
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="92pt"
+            android:layout_marginTop="64pt"
+            android:text="服务类型"
+            android:textColor="#000000"
+            android:textSize="58pt"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_activity_edit_service_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="92pt"
+            android:layout_marginTop="52pt">
+
+            <com.xiuxiu.confinement_nurse.ui.view.SwitchButton
+                android:id="@+id/other_activity_add_my_service_1"
+                android:layout_width="259pt"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:tag="1"
+                app:text_left_1="月嫂服务">
+
+            </com.xiuxiu.confinement_nurse.ui.view.SwitchButton>
+
+            <com.xiuxiu.confinement_nurse.ui.view.SwitchButton
+                android:id="@+id/other_activity_add_my_service_2"
+                android:layout_width="259pt"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="59pt"
+                android:tag="2"
+                app:text_left_1="育婴师服务">
+
+            </com.xiuxiu.confinement_nurse.ui.view.SwitchButton>
+
+            <com.xiuxiu.confinement_nurse.ui.view.SwitchButton
+                android:id="@+id/other_activity_add_my_service_3"
+                android:layout_width="259pt"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="59pt"
+                android:tag="3"
+                app:text_left_1="住院陪护" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_activity_edit_yuesao_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="92pt"
+            android:layout_marginTop="86pt"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="58pt"
+                android:textStyle="bold"
+                android:text="特殊护理" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textSize="40pt"
+                android:text="(可多选)" />
+
+
+        </LinearLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/ll_activity_edit_yuesao_2"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="92pt"
+            android:layout_marginRight="92pt"
+            android:layout_marginTop="53pt"
+            android:layout_height="wrap_content">
+
+            <com.xiuxiu.confinement_nurse.ui.view.SwitchButton
+                android:id="@+id/sb_activity_edit_service_special_1"
+                android:layout_width="259pt"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:tag="0"
+                app:text_left_1="无" />
+
+            <com.xiuxiu.confinement_nurse.ui.view.SwitchButton
+                android:id="@+id/sb_activity_edit_service_special_2"
+                android:layout_width="259pt"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="59pt"
+                android:tag="1"
+                app:text_left_1="早产" />
+
+            <com.xiuxiu.confinement_nurse.ui.view.SwitchButton
+                android:id="@+id/sb_activity_edit_service_special_3"
+                android:layout_width="259pt"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="59pt"
+                android:tag="2"
+                app:text_left_1="大小三阳" />
+
+            <com.xiuxiu.confinement_nurse.ui.view.SwitchButton
+                android:id="@+id/sb_activity_edit_service_special_4"
+                android:layout_width="259pt"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="59pt"
+                android:tag="3"
+                app:text_left_1="双胞胎" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <TextView
+            android:id="@+id/ll_activity_edit_yuyingshi_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="92pt"
+            android:layout_marginTop="52pt"
+            android:text="时间类型"
+            android:textColor="#000000"
+            android:textSize="58pt"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/ll_activity_edit_yuyingshi_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" android:layout_marginTop="53pt"
+            android:layout_marginLeft="92pt"
+            android:layout_marginRight="92pt"
+            tools:visibility="visible">
+
+            <com.xiuxiu.confinement_nurse.ui.view.SwitchButton
+                android:id="@+id/sb_activity_edit_service_time_1"
+                android:layout_width="259pt"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:tag="1"
+                app:text_left_1="全天" />
+
+            <com.xiuxiu.confinement_nurse.ui.view.SwitchButton
+                android:id="@+id/sb_activity_edit_service_time_2"
+                android:layout_width="259pt"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="59pt"
+                android:tag="2"
+                app:text_left_1="仅白天" />
+
+            <com.xiuxiu.confinement_nurse.ui.view.SwitchButton
+                android:id="@+id/sb_activity_edit_service_time_3"
+                android:layout_width="259pt"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="59pt"
+                android:tag="3"
+                app:text_left_1="仅晚上" />
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <TextView
+            android:id="@+id/ll_activity_edit_yuyingshi_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="92pt"
+            android:layout_marginTop="52pt"
+            android:text="其他技能"
+            android:textColor="#000000"
+            android:textSize="58pt"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/ll_activity_edit_yuyingshi_4"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="92pt"
+            android:layout_marginRight="92pt"
+            android:layout_height="wrap_content"
+            android:visibility="gone" android:layout_marginTop="53pt"
+            tools:visibility="visible">
+
+            <com.xiuxiu.confinement_nurse.ui.view.SwitchButton
+                android:id="@+id/sb_activity_edit_service_other_1"
+                android:layout_width="259pt"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:tag="0"
+                app:text_left_1="无" />
+
+            <com.xiuxiu.confinement_nurse.ui.view.SwitchButton
+                android:id="@+id/sb_activity_edit_service_other_2"
+                android:layout_width="259pt"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="59pt"
+                android:tag="1"
+                app:text_left_1="宝宝辅食" />
+
+            <com.xiuxiu.confinement_nurse.ui.view.SwitchButton
+                android:id="@+id/sb_activity_edit_service_other_3"
+                android:layout_width="259pt"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="59pt"
+                android:tag="2"
+                app:text_left_1="早教" />
+
+            <com.xiuxiu.confinement_nurse.ui.view.SwitchButton
+                android:id="@+id/sb_activity_edit_service_other_4"
+                android:layout_width="259pt"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="59pt"
+                android:tag="3"
+                app:text_left_1="小儿推拿" />
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.xiuxiu.confinement_nurse.ui.my.view.MyServiceMsgInfoView
+            android:id="@+id/price_activity_add_my_service"
+            android:layout_width="match_parent"
+            android:layout_height="173pt"
+            android:onClick="onAddServicePrice"
+            app:image_show="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:text_left_1="价格"
+            app:text_left_2=""
+            app:text_right_hint="请输入服务价格" />
+
+        <com.xiuxiu.confinement_nurse.ui.my.view.MyServiceMsgInfoView
+            android:id="@+id/heavenNumber_activity_add_my_service"
+            android:layout_width="match_parent"
+            android:layout_height="173pt"
+            app:image_show="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:text_left_1="天数"
+            app:text_right_hint="请输入服务天数" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="158pt"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XButton
+            android:id="@+id/bt_activity_learning_experience_delete"
+            android:layout_width="248pt"
+            android:layout_height="115pt"
+            android:layout_marginLeft="46pt"
+            android:onClick="onClickClear"
+            android:text="清除"
+            android:textColor="#EC706D"
+            app:bl_corners_radius="9pt"
+            app:bl_solid_color="#F6F6F6" />
+
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XButton
+            android:id="@+id/bt_activity_learning_experience_determine"
+            android:layout_width="match_parent"
+            android:layout_height="115pt"
+            android:layout_marginLeft="36pt"
+            android:layout_marginRight="46pt"
+            android:onClick="onClickSubmit"
+            android:text="确定"
+            android:textColor="#FFFFFF"
+            app:bl_corners_radius="9pt"
+            app:bl_enabled_solid_color="@color/color_7858EE_a100"
+            app:bl_unEnabled_solid_color="@color/color_backdrop_un_primary" />
+    </LinearLayout>
+
+</LinearLayout>

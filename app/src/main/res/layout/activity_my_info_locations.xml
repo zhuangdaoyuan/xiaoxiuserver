@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="139pt"
+        android:background="#FFFFFF">
+
+        <FrameLayout
+            android:id="@+id/fl_activity_my_back"
+            android:layout_width="60pt"
+            android:layout_height="60pt"
+            android:layout_marginLeft="46pt"
+            android:layout_marginTop="53pt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XImageView
+                android:layout_width="27pt"
+                android:layout_height="46pt"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/icon_left"
+                android:onClick="onBack"
+                app:layout_constraintLeft_toLeftOf="parent" />
+        </FrameLayout>
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="选择地址"
+            android:textColor="#000000"
+            android:textSize="58pt" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="250pt"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="40pt"
+        tools:text="杭州"
+        android:id="@+id/texts"
+        android:singleLine="true"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_height="80pt">
+
+    </TextView>
+    <com.xiuxiu.confinement_nurse.ui.base.view.XLinearLayout
+        android:layout_width="0dp"
+        android:orientation="horizontal"
+        app:bl_solid_color="#F0F0F0"
+        app:bl_corners_radius="42pt"
+        android:layout_marginRight="46pt"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toRightOf="@id/texts"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="40pt"
+            app:layout_constraintTop_toTopOf="@id/edittext"
+            app:layout_constraintBottom_toBottomOf="@id/edittext"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintLeft_toLeftOf="@id/edittext"
+            android:layout_marginLeft="39pt"
+            android:background="@drawable/icon_sous"
+            android:layout_height="40pt">
+        </ImageView>
+        <EditText
+            android:layout_width="0dp"
+            android:id="@+id/edittext"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="36pt"
+            tools:text="sssssssss"
+            android:hint="搜索小区名/大厦名"
+            android:layout_marginRight="46pt"
+            android:background="@null"
+            android:textSize="40pt"
+            android:layout_height="86pt">
+        </EditText>
+        <ImageView
+            android:layout_width="40pt"
+            android:layout_marginRight="39pt"
+            android:id="@+id/delete"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/icon_error"
+            android:layout_height="40pt">
+
+        </ImageView>
+    </com.xiuxiu.confinement_nurse.ui.base.view.XLinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/recyclerView"
+        app:layout_constraintTop_toBottomOf="@id/texts"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</androidx.constraintlayout.widget.ConstraintLayout>

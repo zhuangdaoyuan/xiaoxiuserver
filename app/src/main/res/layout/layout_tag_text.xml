@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="58pt"
+    android:paddingRight="20pt">
+
+    <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+        android:id="@+id/tv_layout_tag_text"
+        android:layout_width="wrap_content"
+        android:layout_height="58pt"
+        android:gravity="center"
+        android:minWidth="141pt"
+        android:paddingLeft="20pt"
+        android:paddingRight="20pt"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#666666"
+        android:textSize="35pt"
+        app:bl_corners_radius="9pt"
+        app:bl_solid_color="#F6F6F6" />
+</FrameLayout>
+

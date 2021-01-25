@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xiuxiu.confinement_nurse.ui.base.view.XView
+        android:layout_width="match_parent"
+        android:layout_height="300pt"
+        app:bl_gradient_endColor="@color/color_A0F1EA_a100"
+        app:bl_gradient_startColor="@color/color_F7D1FF_a100"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/title"
+        android:layout_height="139pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/fl_activity_order_details_back"
+            android:layout_width="60pt"
+            android:layout_height="60pt"
+            android:layout_marginLeft="46pt"
+            android:onClick="onBack"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XImageView
+                android:layout_width="27pt"
+                android:onClick="onBack"
+                android:layout_height="46pt"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/icon_left"
+                app:layout_constraintLeft_toLeftOf="parent" />
+        </FrameLayout>
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:id="@+id/tv_activity_details_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详情"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:textSize="58pt" />
+
+    </FrameLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/bg"
+        android:layout_marginTop="80pt"
+        android:layout_height="match_parent">
+
+        <!--    ////////////////////order 详情头部 start//////////////////////////////////////////////////-->
+        <com.xiuxiu.confinement_nurse.ui.base.view.XView
+            android:id="@+id/v_activity_my_bg"
+            android:layout_width="987pt"
+            android:layout_height="403pt"
+            app:bl_corners_radius="20pt"
+            app:bl_solid_color="#FFFFFF"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--      ///////////////////////////////第一行/////////////////////-->
+        <TextView
+            android:id="@+id/v_activity_order_details_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46pt"
+            android:layout_marginTop="56pt"
+            android:ellipsize="end"
+            android:maxWidth="300pt"
+            android:textColor="#333333"
+            android:textSize="35pt"
+            app:layout_constraintLeft_toLeftOf="@id/v_activity_my_bg"
+            app:layout_constraintTop_toTopOf="@id/v_activity_my_bg"
+            tools:text="用户名" />
+
+        <TextView
+            android:id="@+id/v_activity_order_details_line"
+            android:layout_width="1pt"
+            android:layout_height="36pt"
+            android:layout_marginLeft="20pt"
+            android:text="|"
+            app:layout_constraintBottom_toBottomOf="@id/v_activity_order_details_user_name"
+            app:layout_constraintLeft_toRightOf="@id/v_activity_order_details_user_name"
+            app:layout_constraintTop_toTopOf="@id/v_activity_order_details_user_name" />
+
+        <TextView
+            android:id="@+id/v_activity_order_details_user_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20pt"
+            android:ellipsize="end"
+            android:maxWidth="300pt"
+            android:textColor="#333333"
+            android:textSize="35pt"
+            app:layout_constraintBottom_toBottomOf="@id/v_activity_order_details_user_name"
+            app:layout_constraintLeft_toRightOf="@id/v_activity_order_details_line"
+            app:layout_constraintTop_toTopOf="@id/v_activity_order_details_user_name"
+            tools:text="用户类型" />
+
+        <TextView
+            android:id="@+id/v_activity_order_details_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="118pt"
+            android:ellipsize="end"
+            android:maxWidth="300pt"
+            android:textColor="#333333"
+            android:lines="1"
+            android:textSize="35pt"
+            app:layout_constraintBottom_toBottomOf="@id/v_activity_order_details_user_type"
+            app:layout_constraintLeft_toRightOf="@id/v_activity_order_details_user_type"
+            app:layout_constraintTop_toTopOf="@id/v_activity_order_details_user_type"
+            tools:text="地区" />
+
+        <TextView
+            android:id="@+id/v_activity_order_details_line2"
+            android:layout_width="1pt"
+            android:layout_height="36pt"
+            android:layout_marginLeft="20pt"
+            android:text="|"
+            app:layout_constraintBottom_toBottomOf="@id/v_activity_order_details_area"
+            app:layout_constraintLeft_toRightOf="@id/v_activity_order_details_area"
+            app:layout_constraintTop_toTopOf="@id/v_activity_order_details_area" />
+
+        <TextView
+            android:id="@+id/tv_activity_order_details_area2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20pt"
+            android:ellipsize="end"
+            android:maxWidth="300pt"
+            android:textColor="#333333"
+            android:textSize="35pt"
+            app:layout_constraintBottom_toBottomOf="@id/v_activity_order_details_line2"
+            app:layout_constraintLeft_toRightOf="@id/v_activity_order_details_line2"
+            app:layout_constraintTop_toTopOf="@id/v_activity_order_details_line2"
+            tools:text="地区" />
+        <!--  ////////////////////第二行////////////////////////////////////-->
+        <TextView
+            android:id="@+id/tv_activity_order_details_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46pt"
+            android:layout_marginTop="125pt"
+            android:textColor="#999999"
+            android:textSize="35pt"
+            app:layout_constraintLeft_toLeftOf="@id/v_activity_my_bg"
+            app:layout_constraintTop_toTopOf="@id/v_activity_my_bg"
+            tools:text="时间" />
+        <!--  ////////////////////第3行////////////////////////////////////-->
+        <TextView
+            android:id="@+id/tv_activity_order_details_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46pt"
+            android:layout_marginTop="216pt"
+            android:textColor="@color/color_text_color_primary"
+            android:textSize="46pt"
+            app:layout_constraintLeft_toLeftOf="@id/v_activity_my_bg"
+            app:layout_constraintTop_toTopOf="@id/v_activity_my_bg"
+
+            tools:text="月嫂" />
+        <!--  ////////////////////第4行////////////////////////////////////-->
+        <TextView
+            android:id="@+id/tv_activity_order_details_wage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46pt"
+            android:layout_marginBottom="56pt"
+            android:text="工资："
+            android:textColor="#333333"
+            android:textSize="40pt"
+            app:layout_constraintBottom_toBottomOf="@id/v_activity_my_bg"
+            app:layout_constraintLeft_toLeftOf="@id/v_activity_my_bg" />
+
+        <TextView
+            android:id="@+id/tv_activity_order_details_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30pt"
+            android:gravity="center"
+            android:textColor="#FE2323"
+            android:textSize="40pt"
+            app:layout_constraintBottom_toBottomOf="@id/tv_activity_order_details_wage"
+            app:layout_constraintLeft_toRightOf="@id/tv_activity_order_details_wage"
+            app:layout_constraintTop_toTopOf="@id/tv_activity_order_details_wage"
+            tools:text="1000" />
+
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:id="@+id/tv_activity_order_details_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="46pt"
+            android:paddingLeft="27pt"
+            android:paddingTop="17pt"
+            android:paddingRight="27pt"
+            android:paddingBottom="17pt"
+            android:text="投简历"
+            android:textColor="@color/color_text_color_white"
+            android:textSize="34pt"
+            app:bl_corners_radius="33pt"
+            app:bl_enabled_solid_color="@color/color_backdrop_primary"
+            app:bl_unEnabled_solid_color="@color/color_backdrop_un_primary"
+            app:layout_constraintBottom_toBottomOf="@id/tv_activity_order_details_price"
+            app:layout_constraintRight_toRightOf="@id/v_activity_my_bg"
+            app:layout_constraintTop_toTopOf="@id/tv_activity_order_details_price" />
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:id="@+id/tv_activity_order_details_delivery2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="46pt"
+            android:paddingLeft="27pt"
+            android:paddingTop="17pt"
+            android:paddingRight="27pt"
+            android:paddingBottom="17pt"
+            android:text="不可投"
+            android:textColor="@color/color_text_color_white"
+            android:textSize="34pt"
+            app:bl_corners_radius="33pt"
+            app:bl_solid_color="#999999"
+            app:layout_constraintBottom_toBottomOf="@id/tv_activity_order_details_price"
+            app:layout_constraintRight_toRightOf="@id/v_activity_my_bg"
+            app:layout_constraintTop_toTopOf="@id/tv_activity_order_details_price" />
+
+
+
+        <ImageView
+            android:id="@+id/tv_activity_order_details_avatar"
+            android:layout_width="130pt"
+            android:layout_height="130pt"
+            android:layout_marginTop="58pt"
+            android:layout_marginRight="46pt"
+            app:layout_constraintRight_toRightOf="@id/v_activity_my_bg"
+            app:layout_constraintTop_toTopOf="@id/v_activity_my_bg" />
+
+        <!--    ////////////////////order 详情头部 end //////////////////////////////////////////////////-->
+
+
+        <!--    ////////////////////order 基本要求 start //////////////////////////////////////////////////-->
+
+        <TextView
+            android:id="@+id/v_activity_order_details_line3"
+            android:layout_width="1pt"
+            android:layout_height="36pt"
+            android:layout_marginTop="95pt"
+            android:background="@drawable/icon_line_1"
+            app:layout_constraintLeft_toLeftOf="@id/v_activity_my_bg"
+            app:layout_constraintTop_toBottomOf="@id/v_activity_my_bg" />
+
+
+        <TextView
+            android:id="@+id/tv_activity_order_details_basic_requirements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="31pt"
+            android:text="基本要求"
+            android:textColor="#1A1A1A"
+            android:textSize="46pt"
+            app:layout_constraintBottom_toBottomOf="@id/v_activity_order_details_line3"
+            app:layout_constraintLeft_toRightOf="@id/v_activity_order_details_line3"
+            app:layout_constraintTop_toTopOf="@id/v_activity_order_details_line3" />
+
+
+        <com.xiuxiu.confinement_nurse.ui.view.OrderDetailsItemView
+            android:id="@+id/odv_activity_order_details_info_1"
+            android:layout_width="987pt"
+            android:layout_height="289pt"
+            android:layout_marginTop="46pt"
+            app:bl_corners_radius="20pt"
+            app:bl_solid_color="#FFFFFF"
+            app:layout_constraintLeft_toLeftOf="@id/v_activity_my_bg"
+            app:layout_constraintTop_toBottomOf="@id/tv_activity_order_details_basic_requirements" />
+        <!--    ////////////////////order 基本要求 end //////////////////////////////////////////////////-->
+
+
+        <!--    ////////////////////order 其他要求 start //////////////////////////////////////////////////-->
+
+        <TextView
+            android:id="@+id/v_activity_order_details_line4"
+            android:layout_width="1pt"
+            android:layout_height="36pt"
+            android:layout_marginTop="66pt"
+            android:background="@drawable/icon_line_2"
+            app:layout_constraintLeft_toLeftOf="@id/v_activity_order_details_line3"
+            app:layout_constraintTop_toBottomOf="@id/odv_activity_order_details_info_1" />
+
+
+        <TextView
+            android:id="@+id/tv_activity_order_details_basic_other_requirements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="31pt"
+            android:text="其他要求"
+            android:textColor="#1A1A1A"
+            android:textSize="46pt"
+            app:layout_constraintBottom_toBottomOf="@id/v_activity_order_details_line4"
+            app:layout_constraintLeft_toRightOf="@id/v_activity_order_details_line4"
+            app:layout_constraintTop_toTopOf="@id/v_activity_order_details_line4" />
+
+
+        <com.xiuxiu.confinement_nurse.ui.view.OrderDetailsItemView
+            android:id="@+id/odv_activity_order_details_info_2"
+            android:layout_width="987pt"
+            android:layout_height="289pt"
+            android:layout_marginTop="46pt"
+            app:bl_corners_radius="20pt"
+            app:bl_solid_color="#FFFFFF"
+            app:layout_constraintLeft_toLeftOf="@id/v_activity_order_details_line4"
+            app:layout_constraintTop_toBottomOf="@id/v_activity_order_details_line4" />
+        <!--    ////////////////////order 基本要求 end //////////////////////////////////////////////////-->
+
+        <com.xiuxiu.confinement_nurse.ui.view.OrderDetailsItemView
+            android:id="@+id/odv_activity_order_details_info_3"
+            android:layout_width="987pt"
+            android:layout_height="289pt"
+            android:layout_marginTop="46pt"
+            app:bl_corners_radius="20pt"
+            app:bl_solid_color="#FFFFFF"
+            app:layout_constraintLeft_toLeftOf="@id/odv_activity_order_details_info_2"
+            app:layout_constraintTop_toBottomOf="@id/odv_activity_order_details_info_2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

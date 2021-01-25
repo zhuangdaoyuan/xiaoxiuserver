@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="text" format="string" />
+    <attr name="text_left_1" format="string" />
+    <attr name="text_left_2" format="string" />
+    <attr name="text_right_1" format="string" />
+    <attr name="text_hint" format="string"  />
+    <attr name="icon_left"  format="reference" />
+    <attr name="icon_right"  format="reference" />
+    <declare-styleable name="TabView">
+        <attr name="text" />
+    </declare-styleable>
+
+
+    <declare-styleable name="XEditView" >
+        <attr name="text"  />
+        <attr name="text_hint"   />
+        <attr name="icon_left"   />
+        <attr name="icon_right"  />
+    </declare-styleable>
+    <declare-styleable name="XEditCodeView" >
+        <attr name="text"  />
+        <attr name="text_hint"   />
+        <attr name="icon_left"  />
+        <attr name="text_right"  format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MyServiceMsgInfoView">
+        <attr name="text_left_2"  />
+        <attr name="text_left_1"  />
+        <attr name="text_right_hint"  format="string" />
+        <attr name="image_show" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="XMsgInfoView">
+
+        <attr name="text_right_1"/>
+        <attr name="text_left_2"  />
+        <attr name="text_left_1"  />
+    </declare-styleable>
+    <declare-styleable name="OrderDetailsItemView">
+        <attr name="text_left_1"  />
+        <attr name="text_right_1"  />
+        <attr name="text_left_2"  />
+        <attr name="text_right_2" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="text_left_1"  />
+    </declare-styleable>
+    <declare-styleable name="RadioButton">
+        <attr name="text_left" format="string" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ConsecutiveScrollerLayout_Layout">
+        <attr name="layout_isConsecutive" format="boolean"/>
+        <attr name="layout_isNestedScroll" format="boolean"/>
+        <attr name="layout_isSticky" format="boolean"/>
+        <attr name="layout_align" format="enum">
+            <enum name="LEFT" value="1" />
+            <enum name="RIGHT" value="2" />
+            <enum name="CENTER" value="3" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ConsecutiveScrollerLayout">
+        <attr name="isPermanent" format="boolean"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="layout_item_choice_recycler_title" type="id"/>
+
+    <item name="activity_anim_id" type="id"/>
+    <item name="layout_error_retry_bt" type="id"/>
+    <item name="layout_content" type="id"/>
+    <item name="collect_id" type="id"></item>
+    <item name="fast_click" type="id"/>
+    <item name="play_status_foc" type="id"/>
+</resources>

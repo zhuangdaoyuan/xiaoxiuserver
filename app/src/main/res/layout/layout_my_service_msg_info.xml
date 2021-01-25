@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="92pt"
+        android:paddingRight="92pt">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="49pt"
+            tools:text="xxxx" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40pt"
+            android:layout_marginTop="4pt"
+            android:layout_marginRight="40pt"
+            android:layout_weight="1"
+            android:textColor="#FE2323"
+            android:textSize="40pt"
+            tools:text="xxxx" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:textColor="#FF666666"
+            android:textSize="40pt"
+            tools:text="ssssss" />
+
+        <ImageView
+            android:id="@+id/text3"
+            android:layout_width="40pt"
+            android:layout_height="21pt"
+            android:layout_marginLeft="20pt"
+            android:visibility="gone"
+            android:background="@drawable/icon_down" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1pt"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="46pt"
+        android:layout_marginRight="46pt"
+        android:background="#E1E1E1">
+
+    </View>
+</merge>

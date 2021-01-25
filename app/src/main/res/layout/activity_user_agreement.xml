@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <FrameLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="139pt"
+        android:background="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/fl_activity_my_back"
+            android:layout_width="60pt"
+            android:layout_height="60pt"
+            android:layout_marginLeft="46pt"
+            android:layout_marginTop="53pt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XImageView
+                android:layout_width="27pt"
+                android:layout_height="46pt"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/icon_left"
+                android:onClick="onBack"
+                app:layout_constraintLeft_toLeftOf="parent" />
+        </FrameLayout>
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="用户注册"
+            android:textColor="#000000"
+            android:textSize="58pt" />
+    </FrameLayout>
+
+
+    <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#333333"
+        android:textSize="43pt"
+        android:layout_marginTop="56pt"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:text="用户注册协议"
+        android:textStyle="bold"
+        android:layout_marginLeft="38pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+    </com.xiuxiu.confinement_nurse.ui.base.view.XTextView>
+
+
+
+    <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#666666"
+        android:textSize="35pt"
+        android:layout_marginTop="51pt"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:text="@string/text1"
+        android:layout_marginLeft="40pt"
+        android:layout_marginRight="46pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+    </com.xiuxiu.confinement_nurse.ui.base.view.XTextView>
+
+
+
+    <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#666666"
+        android:textSize="35pt"
+        android:layout_marginTop="51pt"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:text="@string/text2"
+        android:layout_marginLeft="40pt"
+        android:layout_marginRight="46pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+    </com.xiuxiu.confinement_nurse.ui.base.view.XTextView>
+
+
+
+    <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#666666"
+        android:textSize="35pt"
+        android:layout_marginTop="51pt"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:text="@string/text3"
+        android:layout_marginLeft="40pt"
+        android:layout_marginRight="46pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+    </com.xiuxiu.confinement_nurse.ui.base.view.XTextView>
+
+
+</LinearLayout>

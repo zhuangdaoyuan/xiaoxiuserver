@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="139pt"
+        android:background="#FFFFFF"
+
+        android:translationZ="7pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/fl_activity_order_details_back"
+            android:layout_width="60pt"
+            android:layout_height="60pt"
+            android:layout_marginLeft="46pt"
+            android:layout_marginTop="53pt"
+            android:onClick="onBack"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="27pt"
+                android:layout_height="46pt"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/icon_left"
+                android:onClick="onBack"
+                app:layout_constraintLeft_toLeftOf="parent" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_activity_details_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="定位"
+            android:textColor="#000000"
+            android:textSize="58pt" />
+
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:translationZ="7pt">
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XButton
+            android:id="@+id/bt_activity_filter_clear"
+            android:layout_width="247pt"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46pt"
+            android:layout_marginTop="33pt"
+            android:layout_marginBottom="33pt"
+            android:gravity="center"
+            android:text="清除"
+            android:textColor="#EC706D"
+            android:textSize="52pt"
+            app:bl_corners_radius="9pt"
+            app:bl_solid_color="#F6F6F6" />
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XButton
+            android:id="@+id/bt_activity_filter_define"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34pt"
+            android:layout_marginTop="33pt"
+            android:layout_marginRight="46pt"
+            android:layout_marginBottom="33pt"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="#FFFFFF"
+            android:textSize="52pt"
+            app:bl_corners_radius="9pt"
+            app:bl_enabled_solid_color="@color/color_backdrop_primary"
+            app:bl_unEnabled_solid_color="@color/color_backdrop_un_primary" />
+    </LinearLayout>
+</LinearLayout>

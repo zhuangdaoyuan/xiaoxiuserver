@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <com.xiuxiu.confinement_nurse.ui.base.view.XImageView
+        android:layout_width="52pt"
+        android:id="@+id/iv_layout_radio"
+        app:bl_unSelected_drawable="@drawable/icon_radiao_un_select"
+        app:bl_selected_drawable="@drawable/icon_radiao_select"
+        android:layout_height="52pt">
+
+    </com.xiuxiu.confinement_nurse.ui.base.view.XImageView>
+    <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+        android:id="@+id/tv_layout_radio"
+        style="@style/Text.subtitle"
+        android:layout_marginLeft="23pt"
+        android:text="名称" />
+</merge>

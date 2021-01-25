@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiuxiu.confinement_nurse.ui.view.OfficeItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="452pt"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    app:bl_corners_radius="43pt"
+    app:bl_solid_color="@color/color_backdrop_white"
+    tools:viewBindingIgnore="false">
+
+</com.xiuxiu.confinement_nurse.ui.view.OfficeItemView>

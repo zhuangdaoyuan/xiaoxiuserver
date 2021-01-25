@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="1264pt"
+        android:layout_gravity="center"
+        app:bl_corners_radius="29pt"
+        app:bl_solid_color="#FFFFFF">
+
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56pt"
+            android:text="协议条款更新政策"
+            android:textColor="#333333"
+            android:textSize="40pt"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </com.xiuxiu.confinement_nurse.ui.base.view.XTextView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="43pt"
+            android:layout_marginTop="55pt"
+            android:layout_marginRight="43pt"
+            android:layout_marginBottom="20pt"
+            app:layout_constraintBottom_toTopOf="@id/agree"
+            app:layout_constraintTop_toBottomOf="@id/title">
+
+            <com.xiuxiu.confinement_nurse.ui.base.view.XLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="软件使用协议"
+                    android:textColor="#333333"
+                    android:textSize="40pt">
+
+                </com.xiuxiu.confinement_nurse.ui.base.view.XTextView>
+
+                <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本协议是用户 (自然人、法人或社会团体)与人民日报媒体技术股份有限公司公司之间关于“人民日报媒体技术股份有限公司”软件产品（以下简称“本软件产品”）的法律协议。一旦安装、复制或以其他方式使用本软件产品，即表示同意接受协议各项条件的约束。如果用户不同意协议的条件，请不要使用本软件产品。"
+                    android:textColor="#999999"
+                    android:textSize="35pt" />
+
+                <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40pt"
+                    android:text="软件使用协议"
+                    android:textColor="#333333"
+                    android:textSize="40pt">
+
+                </com.xiuxiu.confinement_nurse.ui.base.view.XTextView>
+
+                <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.用户必须单独承担发布内容的责任。用户对产品的使用是根据所有适用于本论坛的国家法律、地方法律和国际法律标准的。用户不得在本站论坛发布含有下列内容之一的信息"
+                    android:textColor="#999999"
+                    android:textSize="35pt" />
+            </com.xiuxiu.confinement_nurse.ui.base.view.XLinearLayout>
+        </ScrollView>
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:id="@+id/agree"
+            android:layout_width="match_parent"
+            android:layout_height="101pt"
+            android:layout_marginLeft="42pt"
+            android:layout_marginRight="42pt"
+            android:layout_marginBottom="166pt"
+            android:gravity="center"
+            android:text="同意"
+            android:textColor="#FFFFFF"
+            app:bl_corners_radius="14pt"
+            app:bl_solid_color="#EC706D"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+        </com.xiuxiu.confinement_nurse.ui.base.view.XTextView>
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:id="@+id/quit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="75pt"
+            android:text="不同意并退出"
+            android:textColor="#999999"
+            android:textSize="35pt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+        </com.xiuxiu.confinement_nurse.ui.base.view.XTextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="472pt"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    app:bl_corners_radius="43pt"
+    app:bl_solid_color="@color/color_backdrop_white"
+    tools:viewBindingIgnore="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="58pt">
+        <TextView
+            android:id="@+id/tv_item_order_recommend_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46pt"
+            android:maxWidth="240pt"
+            android:textColor="@color/color_text_color_primary"
+            android:textSize="46pt"
+            android:text="月嫂" />
+
+        <TextView
+            android:id="@+id/tv_item_order_recommend_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32pt"
+            android:ellipsize="end"
+            android:maxWidth="240pt"
+            android:layout_weight="1"
+            android:textColor="#FF0000"
+            android:textSize="46pt"
+            android:text="（急招）" />
+
+        <TextView
+            android:id="@+id/tv_item_order_recommend_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="46pt"
+            android:gravity="center"
+            android:textColor="#FE2323"
+            android:textSize="40pt"
+            android:text="1000" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_item_order_recommend_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46pt"
+        android:layout_marginTop="43pt"
+        android:textColor="#999999"
+        android:textSize="35pt"
+        android:text="服务时间  " />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63pt"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_item_order_recommend_user_img"
+            android:layout_width="74pt"
+            android:layout_height="74pt"
+            android:layout_marginLeft="46pt" />
+
+        <TextView
+            android:id="@+id/tv_item_order_recommend_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="13pt"
+            android:ellipsize="end"
+            android:maxWidth="200pt"
+            android:text="用户姓名和类型"
+            android:textColor="@color/color_text_color_primaryvariant"
+            android:textSize="32pt" />
+
+        <TextView
+            android:id="@+id/tv_item_order_recommend_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="76pt"
+            android:layout_weight="1"
+            android:text="地区"
+            android:textColor="@color/color_text_color_primaryvariant"
+            android:textSize="32pt" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="21pt"
+        android:layout_gravity="right"
+        android:layout_height="wrap_content">
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:id="@+id/tv_layout_orderlist_reject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="46pt"
+            android:paddingLeft="27pt"
+            android:paddingTop="17pt"
+            android:paddingRight="27pt"
+            android:paddingBottom="17pt"
+            android:text="拒接接单"
+            android:textColor="@color/color_primary"
+            android:textSize="34pt"
+            app:bl_corners_radius="33pt"
+            app:bl_stroke_color="@color/color_backdrop_primary"
+            app:bl_stroke_width="1pt" />
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:id="@+id/tv_layout_orderlist_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="46pt"
+            android:paddingLeft="27pt"
+            android:paddingTop="17pt"
+            android:paddingRight="27pt"
+            android:paddingBottom="17pt"
+            android:text="确认接单"
+            android:textColor="@color/color_text_color_white"
+            android:textSize="34pt"
+            app:bl_corners_radius="33pt"
+            app:bl_enabled_solid_color="@color/color_backdrop_primary"
+            app:bl_unEnabled_solid_color="@color/color_backdrop_un_primary" />
+    </LinearLayout>
+
+
+
+</merge>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        barColorWhenSelected="@color/color_backdrop_white"
+        icon="@drawable/icon_order"
+        id="@+id/tab_order"
+        title="订单" />
+    <tab
+        barColorWhenSelected="@color/color_backdrop_white"
+        icon="@drawable/icon_news"
+        id="@+id/tab_news"
+        title="消息" />
+    <tab
+        barColorWhenSelected="@color/color_backdrop_white"
+        icon="@drawable/icon_center"
+        id="@+id/tab_center"
+        title="个人中心" />
+</tabs>

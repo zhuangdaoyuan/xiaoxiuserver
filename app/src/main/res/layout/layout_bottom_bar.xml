@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="148pt">
+
+    <LinearLayout
+        android:id="@+id/ll_layout_bottom_bar_order"
+        android:layout_width="200pt"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+
+        android:clickable="true"
+        android:descendantFocusability="beforeDescendants"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="20pt"
+        android:tag="0">
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XImageView
+            android:id="@+id/iv_layout_bottom_bar_order"
+            android:layout_width="51pt"
+            android:layout_height="51pt"
+            android:tag="0"
+            app:bl_selected_drawable="@drawable/icon_order_select"
+            app:bl_unSelected_drawable="@drawable/icon_order" />
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:id="@+id/tv_layout_bottom_bar_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17pt"
+            android:tag="0"
+            android:text="订单"
+            android:textSize="34pt"
+            app:bl_selected_textColor="@color/color_text_color_primary"
+            app:bl_unSelected_textColor="@color/color_656565_a100" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_layout_bottom_bar_news"
+        android:layout_width="200pt"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:descendantFocusability="beforeDescendants"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="20pt"
+        android:tag="1">
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XImageView
+            android:id="@+id/iv_layout_bottom_bar_news"
+            android:layout_width="51pt"
+            android:layout_height="51pt"
+            android:tag="1"
+            app:bl_selected_drawable="@drawable/icon_news_select"
+            app:bl_unSelected_drawable="@drawable/icon_news" />
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:id="@+id/tv_layout_bottom_bar_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17pt"
+            android:tag="1"
+            android:text="消息"
+            android:textSize="34pt"
+            app:bl_selected_textColor="@color/color_text_color_primary"
+            app:bl_unSelected_textColor="@color/color_656565_a100" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_layout_bottom_bar_center"
+        android:layout_width="200pt"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:descendantFocusability="beforeDescendants"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="20pt"
+        android:tag="2">
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XImageView
+            android:id="@+id/iv_layout_bottom_bar_center"
+            android:layout_width="51pt"
+            android:layout_height="51pt"
+            android:tag="2"
+            app:bl_selected_drawable="@drawable/icon_center_select"
+            app:bl_unSelected_drawable="@drawable/icon_center" />
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:id="@+id/tv_layout_bottom_bar_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17pt"
+            android:tag="2"
+            android:text="个人中心"
+            android:textSize="34pt"
+            app:bl_selected_textColor="@color/color_text_color_primary"
+            app:bl_unSelected_textColor="@color/color_656565_a100" />
+    </LinearLayout>
+
+</LinearLayout>

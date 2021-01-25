@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="89pt"
+        android:layout_marginTop="59pt"
+        android:text="选择登录类型"
+        android:textColor="#333333"
+        android:textSize="69pt"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="259pt"
+        android:orientation="vertical"
+        tools:viewBindingIgnore="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout_user_type_yuesao"
+            android:layout_weight="1"
+            android:text="月嫂"
+            android:textSize="50pt" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="机构"
+            android:textSize="50pt" />
+    </LinearLayout>
+</FrameLayout>

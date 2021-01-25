@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:id="@+id/tv_layout_service_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46pt"
+            android:layout_marginTop="46pt"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:textSize="46pt"
+            tools:text="服务名称" />
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XTextView
+            android:id="@+id/tv_layout_service_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46pt"
+            android:layout_marginTop="46pt"
+            android:layout_marginRight="46pt"
+            android:text="服务价格/天数"
+            android:textColor="#FE2323"
+            tools:textSize="40pt" />
+    </LinearLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/fl_layout_service_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37pt"
+        android:layout_marginRight="46pt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85pt"
+        android:gravity="right|center_vertical"
+        android:paddingBottom="46pt">
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XButton
+            android:id="@+id/bv_layout_my_service_edit"
+            android:layout_width="187pt"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="58pt"
+            android:minHeight="0dp"
+            android:paddingTop="24pt"
+            android:paddingBottom="24pt"
+            android:text="编辑"
+            android:textColor="#EC706D"
+            android:textSize="40pt"
+            app:bl_corners_radius="43pt"
+            app:bl_stroke_color="#EC706D"
+            app:bl_stroke_width="1pt"></com.xiuxiu.confinement_nurse.ui.base.view.XButton>
+
+
+        <com.xiuxiu.confinement_nurse.ui.base.view.XButton
+            android:id="@+id/bv_layout_my_service_delete"
+            android:layout_width="187pt"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="89pt"
+            android:minHeight="0dp"
+            android:paddingTop="24pt"
+            android:paddingBottom="24pt"
+            android:text="删除"
+            android:textColor="#FFFFFF"
+            android:textSize="40pt"
+            app:bl_corners_radius="43pt"
+            app:bl_solid_color="#EC982B"></com.xiuxiu.confinement_nurse.ui.base.view.XButton>
+
+
+    </LinearLayout>
+</merge>

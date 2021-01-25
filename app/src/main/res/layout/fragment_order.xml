@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bl_gradient_endColor="@color/color_A0F1EA_a100"
+        app:bl_gradient_startColor="@color/color_F7D1FF_a100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="46pt"
+            android:paddingTop="48pt"
+            android:paddingRight="44pt"
+            app:layout_scrollFlags="enterAlwaysCollapsed|scroll">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="订单"
+                android:textColor="@color/color_backdrop_black"
+                android:textSize="57pt"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/ll_fragment_order_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="44pt"
+                    android:layout_height="53pt"
+                    android:layout_marginRight="24pt"
+                    android:background="@drawable/icon_location"
+                    app:layout_constraintRight_toLeftOf="@id/tv_main_location"
+                    app:layout_constraintTop_toTopOf="@id/tv_main_location" />
+
+                <TextView
+                    android:id="@+id/tv_main_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#ff666666"
+                    android:textSize="46pt" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginRight="46pt"
+            android:layout_marginBottom="5pt">
+
+            <net.lucode.hackware.magicindicator.MagicIndicator
+                android:id="@+id/magic_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="100pt"
+                android:layout_marginLeft="46pt"
+                android:layout_marginTop="100pt"
+                android:background="@android:color/transparent" />
+
+            <com.xiuxiu.confinement_nurse.ui.view.TabView
+                android:id="@+id/fragment_order_my_lisg"
+                android:layout_width="wrap_content"
+                android:layout_height="78pt"
+                android:layout_gravity="right|bottom"
+                android:layout_marginRight="237pt"
+                android:visibility="gone"
+                android:layout_marginBottom="10pt"
+                android:gravity="center_vertical"
+                app:bl_corners_radius="39pt"
+                app:bl_solid_color="@color/color_FFFFFF_a60"
+                app:text="我的订单">
+
+            </com.xiuxiu.confinement_nurse.ui.view.TabView>
+
+            <com.xiuxiu.confinement_nurse.ui.view.TabView
+                android:layout_width="wrap_content"
+                android:layout_height="78pt"
+                android:layout_gravity="right|bottom"
+                android:id="@+id/fragment_order_my_filter"
+                android:layout_marginBottom="10pt"
+                android:gravity="center_vertical"
+                app:bl_corners_radius="39pt"
+                app:bl_solid_color="@color/color_FFFFFF_a60"
+                app:text="筛选" />
+        </FrameLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>
