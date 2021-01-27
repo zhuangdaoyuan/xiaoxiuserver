@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_html_root_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:gravity="center">
+    android:background="#EFEFEF"
+    android:gravity="center"
+    android:orientation="vertical">
+
     <FrameLayout
         android:id="@+id/title"
         android:layout_width="match_parent"
@@ -42,6 +44,7 @@
             android:textColor="#000000"
             android:textSize="58pt" />
     </FrameLayout>
+
     <WebView
         android:id="@+id/activity_html_webView"
         android:layout_width="match_parent"
@@ -49,5 +52,5 @@
         android:layerType="software"
         android:visibility="visible"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 </LinearLayout>

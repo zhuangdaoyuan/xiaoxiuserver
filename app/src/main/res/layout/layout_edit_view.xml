@@ -7,19 +7,16 @@
     app:bl_corners_radius="63pt"
     app:bl_solid_color="#E6E6E6">
 
-    <FrameLayout
-        android:layout_width="50pt"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="46pt"  >
 
-        <ImageView
-            android:id="@+id/iv_layout_edit_left_icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            tools:background="#000000"
-            tools:src="@drawable/icon_phone" />
-    </FrameLayout>
+    <ImageView
+        android:id="@+id/iv_layout_edit_left_icon"
+        android:layout_width="50pt"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="46pt"
+        android:scaleType="fitCenter"
+        tools:background="#000000"
+        tools:src="@drawable/icon_phone" />
 
     <EditText
         android:id="@+id/tv_layout_edit_text"
@@ -27,27 +24,22 @@
         android:layout_height="match_parent"
         android:layout_marginRight="30pt"
         android:layout_weight="1"
-        android:gravity="center_vertical"
         android:background="@null"
-        android:textCursorDrawable="@drawable/color_cursor"
+        android:gravity="center_vertical"
         android:lines="1"
         android:paddingLeft="30pt"
         android:textColor="#000000"
         android:textColorHint="#B3B3B3"
+        android:textCursorDrawable="@drawable/color_cursor"
         android:textSize="40pt" />
 
-    <FrameLayout
 
+    <ImageView
+        android:id="@+id/iv_layout_edit_right_icon"
         android:layout_width="50pt"
-        android:layout_height="match_parent"
-        android:layout_marginRight="49pt">
-
-        <ImageView
-            android:id="@+id/iv_layout_edit_right_icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right|center_vertical"
-            android:scaleType="center"
-            tools:background="#000000" />
-    </FrameLayout>
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="49pt"
+        android:scaleType="fitCenter"
+        tools:background="#000000" />
 </merge>

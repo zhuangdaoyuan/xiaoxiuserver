@@ -1,7 +1,6 @@
 package com.xiuxiu.confinement_nurse.ui.login;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
@@ -15,15 +14,12 @@ import android.view.View;
 import androidx.annotation.Nullable;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.alibaba.android.arouter.launcher.ARouter;
 import com.monster.share.SocialHelper;
 import com.monster.share.callback.SocialLoginCallback;
 import com.monster.share.entities.ThirdInfoEntity;
 import com.xiuxiu.confinement_nurse.Constants;
 import com.xiuxiu.confinement_nurse.databinding.ActivityLoginBinding;
 import com.xiuxiu.confinement_nurse.help.RouterHelper;
-import com.xiuxiu.confinement_nurse.help.ToastHelper;
-import com.xiuxiu.confinement_nurse.help.UtilsHelper;
 import com.xiuxiu.confinement_nurse.help.ViewHelper;
 import com.xiuxiu.confinement_nurse.model.ModelManager;
 import com.xiuxiu.confinement_nurse.ui.base.AbsBaseActivity;
@@ -31,12 +27,6 @@ import com.xiuxiu.confinement_nurse.ui.login.view.XEditView;
 import com.xiuxiu.confinement_nurse.ui.user.UserInfoContract;
 import com.xiuxiu.confinement_nurse.ui.user.UserInfoPresenter;
 import com.xiuxiu.confinement_nurse.utlis.xfunc.XFunc0;
-
-import java.util.Locale;
-
-import io.michaelrocks.libphonenumber.android.NumberParseException;
-import io.michaelrocks.libphonenumber.android.PhoneNumberUtil;
-import io.michaelrocks.libphonenumber.android.Phonenumber;
 
 import static com.xiuxiu.confinement_nurse.help.RouterHelper.Constant.KEY_LOGIN_SUCCESS;
 
@@ -188,6 +178,8 @@ public class LoginActivity extends AbsBaseActivity implements XEditView.addTextC
 
     @Override
     public void onRequestLoginSuccess(String xtoken, String userId) {
+
+
         userPresenter.requestUserInfo(xtoken, userId, new XFunc0() {
             @Override
             public void call() {

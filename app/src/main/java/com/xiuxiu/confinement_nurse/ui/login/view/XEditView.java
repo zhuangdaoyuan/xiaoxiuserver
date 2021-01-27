@@ -59,10 +59,10 @@ public class XEditView extends LinearLayout implements TextWatcher {
     private void initattrs(Context context, AttributeSet attrs) {
         if (attrs != null) {
             TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.XEditView);
-            title = (a.getString(R.styleable.XEditView_text));
-            titleHint = (a.getString(R.styleable.XEditView_text_hint));
-            iconLeft = (a.getResourceId(R.styleable.XEditView_icon_left, 0));
-            iconRight = (a.getResourceId(R.styleable.XEditView_icon_right, 0));
+            title = a.getString(R.styleable.XEditView_text);
+            titleHint = a.getString(R.styleable.XEditView_text_hint);
+            iconLeft = a.getResourceId(R.styleable.XEditView_icon_left, 0);
+            iconRight = a.getResourceId(R.styleable.XEditView_icon_right, 0);
             a.recycle();
         }
     }
